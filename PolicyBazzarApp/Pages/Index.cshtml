@@ -1,0 +1,24 @@
+﻿@page
+@model PolicyBazzarApp.Pages.IndexModel
+@{
+    //Variable declartion
+    int number = 10;
+}
+
+<p> This is a Index Razor Page</p>
+
+<table border="1">
+    <tr>
+        <th>Policy Id</th>
+        <th>Policy Name</th>
+        <th>Policy Details</th>
+        <th>Policy Type</th>
+     
+    </tr>
+    <tr>
+        <td>@Model.policy.policyId</td>
+        <td>@Model.policy.policyName</td>
+        <td>@Model.policy.policyDetail</td>
+        <td>@Model.policy.policyType</td>
+    </tr>
+</table>
